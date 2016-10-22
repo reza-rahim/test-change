@@ -39,6 +39,8 @@
 7. **Scale up Node.js app from 2 instance to 3 instance**
  
    `./mesos_deploy_scaleup_app.sh`
+   
+   ** you can go down to Debuging section and play with containers **
 
 8. **Move the Mongo DB from 10.0.15.12 to 10.0.15.13, the data movement is done by flocker with ZFS file system.**
 
