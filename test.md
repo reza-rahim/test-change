@@ -118,7 +118,11 @@ a259f83ddd41        weaveworks/weave:1.7.2                         "/home/weave/
 
 `docker exec -it fa942f9ca616 bash`
 
-   Now we are at the contaner propmt. 
+your promt should change to:
+
+`root@nginx:/#`
+
+Now we are at the contaner propmt. 
 
 `ip a`
 
@@ -153,5 +157,31 @@ PING nodeapp.weave.local (10.2.128.1) 56(84) bytes of data.
 
 ```
 
-Ping is returning two different ip `(10.2.192.0, 10.2.128.1)`. Because there are two instances of  nodeapp container and weave DNS is load balancing between them.  
+Ping is returning two different ip `(10.2.192.0, 10.2.128.1)`. Because there are two instances of  `nodeapp` container and weave DNS is load balancing between them.  
 
+
+Let’s look at the nginx configuration file
+
+```
+cat /etc/nginx/conf.d/default.conf
+
+server {
+    listen 80;
+
+    server_name localhost;
+
+    location / {
+        proxy_pass http://nodeapp:3000;
+        proxy_http_version 1.1;
+        proxy_set_header Upgrade $http_upgrade;
+        proxy_set_header Connection 'upgrade';
+        proxy_set_header Host $host;
+        proxy_cache_bypass $http_upgrade;
+    }
+}
+```
+let's curl the `nodeapp`
+
+`curl http://nodeapp:3000`
+
+`<!DOCTYPE html><html><head><title>Express</title><link rel="stylesheet" href="/stylesheets/style.css"></head><body><h1>Express</h1><p>Welcome to Express</p></body></html>`
