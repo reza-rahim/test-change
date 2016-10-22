@@ -93,7 +93,7 @@ All Docker containers are configured to use [rsyslog driver](https://docs.docker
 Each local rsyslog is set up forward the local Docker log central rsyslog server for `log aggregation`. For this application `node1` is set to be the cental log server. Centralized log could be found:
    `/var/log/remote/`
 
-For prodcution system, log could be aggregated using [ELK Stack](https://www.elastic.co/webinars/introduction-elk-stack) 
+For prodcution system, log could be aggregated using [ELK Stack](https://www.elastic.co/) 
 
 
 ### Debuging 
