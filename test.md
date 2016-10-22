@@ -123,7 +123,7 @@ your promt should change to:
 
 `root@nginx:/#`
 
-Now we are at the contianer propmt issue the following command:
+Now we are at the contianer propmt, issue the following command `ip` :
 
 `ip a`
 
@@ -140,7 +140,7 @@ Now we are at the contianer propmt issue the following command:
 
 Now ping the nodeapp container.
 
-`for i in `seq 1 3`; do ping -c 2 nodeapp; done`
+`for i in `seq 1 5`; do ping -c 2 nodeapp; done`
 ```
 --- nodeapp.weave.local ping statistics ---
 2 packets transmitted, 2 received, 0% packet loss, time 999ms
@@ -158,7 +158,7 @@ PING nodeapp.weave.local (10.2.128.1) 56(84) bytes of data.
 
 ```
 
-Ping is returning two different ip `(10.2.192.0, 10.2.128.1)`. Because there are two instances of  `nodeapp` container and weave DNS is load balancing between them.  
+Ping is returning multiple ips `(10.2.192.0, 10.2.128.1)`. Because there are multiple instances of  `nodeapp` container and weave DNS is load balancing between them.  
 
 
 Let’s look at the nginx configuration file
