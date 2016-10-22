@@ -88,9 +88,11 @@ Flocker is configured to use ZFS file system. In a cloud environment, the system
 
 ### Logging
 All Docker containers are configured to use [rsyslog driver](https://docs.docker.com/engine/admin/logging/overview/). Each container goes goes to 
+
    `/var/log/docker/<app_name>/docker.log`.
 
-Each local rsyslog is set up forward the local Docker log central rsyslog server for `log aggregation`. For this application `node1` is set to be the cental log server. Centralized log could be found:
+Each local rsyslog is set up to forward the local Docker log to central rsyslog server for `log aggregation`. For this application `node1` is set to be the cental log server. Centralized log could be found:
+
    `/var/log/remote/`
 
 For prodcution system, log could be aggregated using [ELK Stack](https://www.elastic.co/) 
