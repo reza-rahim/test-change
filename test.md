@@ -203,7 +203,7 @@ let's curl the nodejs application running on port 3000 on `nodeapp` container.
 `<!DOCTYPE html><html><head><title>Express</title><link rel="stylesheet" href="/stylesheets/style.css"></head><body><h1>Express</h1><p>Welcome to Express</p></body></html>`
 
 ## flocker
-log back out `mgmt` node
+log back out to `mgmt` node
 
 use `flockerctl` to see all the volumes managed by Flocker.
 
