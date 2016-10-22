@@ -86,14 +86,15 @@ There are four vagrant machines
 
 For example, let's look nodeapp build process:
 
-1. Build Docker images and publish to local Docker Registry: 
-
   - `~/ansible/mesos-app/nodeapp/Dockerfile` contains the logic to build the nodeapp Docker container.
  
-2. Deploy Marathon Jobs
-
   - `~/ansible/mesos-app/nodeapp/ansible/roles/deploy/files/application.json.j2` contains the template for Marathon job. 
 
+  - `~/ansible/mesos-app/nodeapp/deploy_with_docker_build.sh` would build a new Docker image, push the image to local dockr registry and deploy the Marathon job
+  
+  - `~/ansible/mesos-app/nodeapp/deploy_without_docker_build.sh` only deply the Marathon job. It's helpfull when we only changing the deploymen parameter such a number of instances or amount of memory for the container.
+  
+  
 ![Image of Aplication Architecture] (https://github.com/reza-rahim/microservice/blob/master/picture/AplicationArchitecture.png)
 
 Weave provides a virtual network for Docker Container as well DNS for container. For example, nodeapp container can be accessed from nginx container by using `nodeapp.weave.local` DNS name. 
