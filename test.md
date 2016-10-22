@@ -82,6 +82,8 @@ There are four vagrant machines
 1. **10.0.15.12(node2)** `node3`serves only as a Mesos slaves. It runs application containers.   
 1. **10.0.15.13(node3)** `node` serves only as a Mesos slaves. It runs application containers.  
 
+![Image of Process Deployment] (https://github.com/reza-rahim/microservice/blob/master/picture/ProcessDeployment.png)
+
 
 ![Image of Aplication Architecture] (https://github.com/reza-rahim/microservice/blob/master/picture/AplicationArchitecture.png)
 
