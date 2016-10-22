@@ -187,3 +187,15 @@ let's curl the nodejs application running on port 3000 on `nodeapp` container.
 
 `<!DOCTYPE html><html><head><title>Express</title><link rel="stylesheet" href="/stylesheets/style.css"></head><body><h1>Express</h1><p>Welcome to Express</p></body></html>`
 
+## flocker
+log back out `mgmt` node
+
+use `flockerctl list` to all the volume managed by Flocker.
+
+```
+vagrant@mgmt:~$ flockerctl list
+/usr/local/bin/flockerctl: 3: read: Illegal option -d
+DATASET                                SIZE    METADATA                             STATUS         SERVER
+62748416-3d6a-49f2-8583-52ea07d60700   1.00G   maximum_size=1073741824,name=mongo   attached ✅   03e9e291 (10.0.15.12)
+```
+
