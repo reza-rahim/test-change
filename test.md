@@ -18,3 +18,9 @@
 
 ## Overview of the Framework
 ![Image of System Architecture](https://github.com/reza-rahim/microservice/blob/master/picture/SystemArchitecture.png)
+
+There are four vagrant machine 
+1. **10.0.15.10(mgmt)**
+1. **10.0.15.11(node1)**
+1. **10.0.15.12(node2)**
+1. **10.0.15.13(node3)**
