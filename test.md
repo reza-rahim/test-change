@@ -91,7 +91,7 @@ All Docker containers are configured to use [rsyslog driver](https://docs.docker
 
    `/var/log/docker/<app_name>/docker.log`.
 
-Each local rsyslog is set up to forward the local Docker log to central rsyslog server for `log aggregation`. For this application `node1` is set to be the cental log server. On `node` the entralized log could be found at:
+Each local rsyslog is set up to forward the local Docker log to central rsyslog server for `log aggregation`. For this application `node1` is set to be the cental log server. On `node1` the entralized log could be found at:
 
    `/var/log/remote/`
 
