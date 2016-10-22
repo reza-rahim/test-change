@@ -62,6 +62,8 @@
 
 3. [**Marathon:**](https://mesosphere.github.io/marathon/) Mesos only provides the basic “kernel” layer of your cluster. Marathon framework is the equivalent of the Linux upstart or init daemons, designed for long-running applications. 
 
+   Marathon framework is repossible for scheduling Docker container and keep them running on Mesos Cluster.
+   
 4. [**Weave:**](https://www.weave.works/) Waeve is Software Defined Network (SDN) that provides a unique IP address to each Docker Container over multiple host machines by creating virtual network. As a result, Docker container can directly talk to other Docker Containers from different hosts. Besides that, Weave also provides a DNS like functionality, where Docker Containers can be discovered with DNS like name resolution. 
 
 5. [**Flocker:**](https://clusterhq.com/) Flocker is an open-source container data volume manager for Dockerized applications. It helps to move the external persistence volume with the container. For example, if a Docker Container moves from one host another host, Flocker would re-mount the existing volume to the container. So the statefull containers --like database -- can be moved with ease. 
