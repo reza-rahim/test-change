@@ -20,3 +20,10 @@ Once your container service has been created you will have a resource group cont
 3. **Marathon on port 8080** - Marathon is a scheduler for Mesos that is equivalent to init on a single linux machine: it schedules long running tasks for the whole cluster.
 4. **Chronos on port 4400** - Chronos is a scheduler for Mesos that is equivalent to cron on a single linux machine: it schedules periodic tasks for the whole cluster.
 5. **Docker on port 2375** - The Docker engine runs containerized workloads and each Agent runs the Docker engine.  Mesos runs Docker workloads, and examples on how to do this are provided in the Marathon and Chronos walkthrough sections of this readme.
+
+
+All VMs are in the same VNET where the masters are on private subnet 172.16.0.0/24 and the agents are on the private subnet, 10.0.0.0/8, and fully accessible to each other.
+
+## Template Parameters
+When you deploy the template you will need to specify the following parameters:
+* `dnsNamePrefix`
