@@ -100,6 +100,7 @@ For prodcution system, log could be aggregated using [ELK Stack](https://www.ela
 
 ### Debuging 
 
+
 log in to `node1` from `mgmt` 
 ```
    ssh node1
