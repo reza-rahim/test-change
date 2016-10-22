@@ -114,4 +114,4 @@ e8e2bd1f14bf        registry:2                                     "/entrypoint.
 a259f83ddd41        weaveworks/weave:1.7.2                         "/home/weave/weaver -"   About an hour ago   Up About an hour                                    weave
 ```
 
-fa942f9ca616 is docker process id for nginx container.
+**fa942f9ca616** is docker process id for nginx container. Now let's log into the nginx Docker container.
