@@ -81,6 +81,6 @@ There are four vagrant machines
 
 ![Image of Aplication Architecture] (https://github.com/reza-rahim/microservice/blob/master/picture/AplicationArchitecture.png)
 
-Weave provides a virtual network for Docker Container as well DNS for container. For example, nodeapp container can be accessed from nginx container by using nodeapp.weave.local DNS name. 
+Weave provides a virtual network for Docker Container as well DNS for container. For example, nodeapp container can be accessed from nginx container by using `nodeapp.weave.local` DNS name. 
 
-Flocker is configured to use ZFS file system. In a cloud environment, the system should be using network persistence volume such as EBS or Ceph. When we move the mongo db Docker container form node2 to node3, Flocker would move all the data from node2 using ZFS replication feature.   
+Flocker is configured to use ZFS file system. In a cloud environment, the system should be using network persistence volume such as EBS or Ceph. When we move the mongo db Docker container form node2 to node3, `Flocker would move all the data from node2 using ZFS replication feature`.   
