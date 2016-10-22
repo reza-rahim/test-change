@@ -51,7 +51,7 @@
 
    `./mesos_weave_scope.sh`
 
-  1. Weave Scope UI: 10.0.15.10:4040 
+  1. Weave Scope UI: http://10.0.15.10:4040 
   
 ## Overview of the Framework
 1. [**Docker:**](https://www.docker.com/) Docker is a tool that allows developers, sys-admins etc. to easily deploy their applications in a sandbox (called containers) to run on the host operating system i.e. Linux.
