@@ -88,10 +88,7 @@ For example, let's look nodeapp build process:
 
 1. Build Docker images and publish to local Docker Registry: 
 
- 
-  `/home/vagrant/ansible/mesos-app/nodeapp/Dockerfile contains the logic to build the nodeapp Docker container.`
-  `The docker container is build and publish to local docker registry by`
-  `/home/vagrant/ansible/mesos-app/nodeapp/deploy_with_docker_build.sh scripts`
+- ansible/mesos-app/nodeapp/Dockerfile contains the logic to build the nodeapp Docker container.The docker container is build and publish to local docker registry by ansible/mesos-app/nodeapp/deploy_with_docker_build.sh scripts`
   
 2. Deploy Marathon Jobs
    
