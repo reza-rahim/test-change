@@ -193,7 +193,7 @@ let's curl the nodejs application running on port 3000 on `nodeapp` container.
 ## flocker
 log back out `mgmt` node
 
-use `flockerctl list` to all the volume managed by Flocker.
+use `flockerctl` to see all the volumes managed by Flocker.
 
 ```
 vagrant@mgmt:~$ flockerctl list
