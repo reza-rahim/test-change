@@ -88,7 +88,7 @@ For example, let's look nodeapp build process:
 
   - `~/ansible/mesos-app/nodeapp/Dockerfile` contains the logic to build the nodeapp Docker container.
  
-  - `~/ansible/mesos-app/nodeapp/ansible/roles/deploy/files/application.json.j2` contains the template for Marathon job. For information how to define a Marathon job please refer to https://mesosphere.github.io/marathon/docs/application-basics.html.
+  - `~/ansible/mesos-app/nodeapp/ansible/roles/deploy/files/application.json.j2` contains the template for Marathon job. For information how to define a Marathon job please refer to [mesosphere.github.io](https://mesosphere.github.io/marathon/docs/application-basics.html).
 
   - `~/ansible/mesos-app/nodeapp/deploy_with_docker_build.sh` would build a new Docker image, push the image to local docker registry and deploy the Marathon job
   
