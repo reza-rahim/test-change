@@ -8,3 +8,5 @@
   2. **Mesos masters**
   3. **Mesos slaves**
   4. **Frameworks**
+
+3. **Marathon:**  Mesos only provides the basic “kernel” layer of your cluster. Marathon framework is the equivalent of the Linux upstart or init daemons, designed for long-running applications.
