@@ -24,5 +24,10 @@ There are four vagrant machine
 1. **10.0.15.10(mgmt):** mgmt acts as cluster management node. It is used for running various Ansible build and deploy scripts such as building cluster, building Docker images or deploying Marathon jobs.
 1. **10.0.15.11(node1):** node1 holds Zookeeper, Mesos Master and Marathon. It serves as a Mesos slave as well. It also runs special Docker Container called registry. The registry serves as local Docker registry. All application Docker containers get pushed into the local registry before get deployed on the cluster.   
 1. **10.0.15.12(node2)** Serves only as a Mesos slaves. It runs application containers.   
-1. **10.0.15.13(node3)** Serves only as a Mesos slaves. It runs application containers.   
+1. **10.0.15.13(node3)** Serves only as a Mesos slaves. It runs application containers.  
+
+Weave provides a virtual network for Docker Container as well DNS for container. For example, nodeapp container can be accessed from nginx container by using nodeapp.weave.local DNS name. 
+
+
+
 
