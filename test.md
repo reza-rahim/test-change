@@ -88,11 +88,11 @@ For example, let's look nodeapp build process:
 
   - `~/ansible/mesos-app/nodeapp/Dockerfile` contains the logic to build the nodeapp Docker container.
  
-  - `~/ansible/mesos-app/nodeapp/ansible/roles/deploy/files/application.json.j2` contains the template for Marathon job. 
+  - `~/ansible/mesos-app/nodeapp/ansible/roles/deploy/files/application.json.j2` contains the template for Marathon job. For information how to define a Marathon job please refer to https://mesosphere.github.io/marathon/docs/application-basics.html.
 
-  - `~/ansible/mesos-app/nodeapp/deploy_with_docker_build.sh` would build a new Docker image, push the image to local dockr registry and deploy the Marathon job
+  - `~/ansible/mesos-app/nodeapp/deploy_with_docker_build.sh` would build a new Docker image, push the image to local docker registry and deploy the Marathon job
   
-  - `~/ansible/mesos-app/nodeapp/deploy_without_docker_build.sh` only deply the Marathon job. It's helpfull when we only changing the deploymen parameter such a number of instances or amount of memory for the container.
+  - `~/ansible/mesos-app/nodeapp/deploy_without_docker_build.sh` only deploy the Marathon job. It's helpfull when we are only changing the deploymen parameter such a number of instances or amount of memory for the container.
   
   
 ![Image of Aplication Architecture] (https://github.com/reza-rahim/microservice/blob/master/picture/AplicationArchitecture.png)
