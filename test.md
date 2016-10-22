@@ -14,3 +14,5 @@
 4. **Weave:** Waeve is Software Defined Network (SDN) that provides a unique IP address to each Docker Container over multiple host machines by creating virtual network. As a result, Docker container can directly talk to other Docker Containers from different hosts. Besides that, Weave also provides a DNS like functionality, where Docker Containers can be discovered with DNS like name resolution.
 
 5. **Flocker:** Flocker is an open-source container data volume manager for Dockerized applications. It helps to move the external persistence volume with the container. For example, if a Docker Container moves from one host another host, Flocker would re-mount the existing volume to the container. So the statefull containers --like database -- can be moved with ease.
+
+(https://github.com/reza-rahim/microservice/blob/master/picture/SystemArchitecture.png)
