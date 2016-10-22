@@ -66,17 +66,17 @@
    
 4. [**Weave:**](https://www.weave.works/) Waeve is Software Defined Network (SDN) that provides a unique IP address to each Docker Container over multiple host machines by creating virtual network. As a result, Docker container can directly talk to other Docker Containers from different hosts. Besides that, Weave also provides a DNS like functionality, where Docker Containers can be discovered with DNS like name resolution. 
 
-5. [**Flocker:**](https://clusterhq.com/) Flocker is an open-source container data volume manager for Dockerized applications. It helps to move the external persistence volume with the container. For example, if a Docker Container moves from one host another host, Flocker would re-mount the existing volume to the container. So the statefull containers --like database -- can be moved with ease. 
+5. [**Flocker:**](https://clusterhq.com/) Flocker is an open-source container data volume manager for Dockerized applications. It helps to move the external persistence volume with the container. For example, if a Docker Container moves from one host another host, Flocker would re-mount the existing volume to the newly provisioned container. So the statefull containers --like database -- can be moved with ease. 
 
 
 ![Image of System Architecture](https://github.com/reza-rahim/microservice/blob/master/picture/SystemArchitecture.png)
 
 There are four vagrant machines 
 
-1. **10.0.15.10(mgmt):** mgmt acts as cluster management node. It is used for running various Ansible build and deploy scripts such as building cluster, building Docker images or deploying Marathon jobs.
-1. **10.0.15.11(node1):** node1 holds Zookeeper, Mesos Master and Marathon. It serves as a Mesos slave as well. It also runs special Docker Container called registry. The registry serves as local Docker registry. All application Docker containers get pushed into the local registry before get deployed on the cluster.   
-1. **10.0.15.12(node2)** Serves only as a Mesos slaves. It runs application containers.   
-1. **10.0.15.13(node3)** Serves only as a Mesos slaves. It runs application containers.  
+1. **10.0.15.10(mgmt):** `mgmt` acts as cluster management node. It is used for running various Ansible build and deploy scripts such as building cluster, building Docker images or deploying Marathon jobs.
+1. **10.0.15.11(node1):** `node1` holds Zookeeper, Mesos Master and Marathon. It serves as a Mesos slave as well. It also runs special Docker Container called registry. The registry serves as local Docker registry. All application Docker containers get pushed into the local registry before get deployed on the cluster.   
+1. **10.0.15.12(node2)** `node3`serves only as a Mesos slaves. It runs application containers.   
+1. **10.0.15.13(node3)** `node` serves only as a Mesos slaves. It runs application containers.  
 
 
 ![Image of Aplication Architecture] (https://github.com/reza-rahim/microservice/blob/master/picture/AplicationArchitecture.png)
