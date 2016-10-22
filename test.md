@@ -22,6 +22,6 @@
 There are four vagrant machine 
 
 1. **10.0.15.10(mgmt):** mgmt acts as cluster management node. It is used for running various Ansible build and deploy scripts such as building cluster, building Docker images or deploying Marathon jobs.
-1. **10.0.15.11(node1)**
+1. **10.0.15.11(node1):** node1 holds Zookeeper, Mesos Master and Marathon. It serves as a Mesos slave as well. It also runs special Docker Container called registry. The registry serves as local Docker registry. All application Docker containers get pushed into the local registry before get deployed on the cluster.   
 1. **10.0.15.12(node2)**
 1. **10.0.15.13(node3)**
