@@ -161,7 +161,7 @@ PING nodeapp.weave.local (10.2.128.1) 56(84) bytes of data.
 
 ```
 
-Ping is returning multiple ips `(10.2.192.0, 10.2.128.1)`. Because there are multiple instances of  `nodeapp` container and weave DNS is load balancing between them.  
+Ping is returning multiple ip `(10.2.192.0, 10.2.128.1)`. Because there are multiple instances of `nodeapp` container and weave DNS is load balancing between them.  
 
 
 Let’s look at the nginx configuration file
