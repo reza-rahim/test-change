@@ -115,5 +115,16 @@ a259f83ddd41        weaveworks/weave:1.7.2                         "/home/weave/
 ```
 
 **fa942f9ca616** is the current docker process id for nginx container. Now let's log into the nginx Docker container.
+```
+docker exec -it fa942f9ca616 bash
+ip a
+```
+```
+15: ethwe@if16: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1410 qdisc noqueue state UP group default
+    link/ether ea:f7:30:4c:a2:93 brd ff:ff:ff:ff:ff:ff link-netnsid 0
+    inet 10.2.0.1/16 scope global ethwe
+       valid_lft forever preferred_lft forever
+    inet6 fe80::e8f7:30ff:fe4c:a293/64 scope link
+       valid_lft forever preferred_lft forever
+```
 
-`docker exec -it fa942f9ca616 bash`
