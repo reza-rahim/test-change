@@ -1,6 +1,7 @@
 # Microservice Framework - Mesos/Marathon, Docker, Weave and Flocker
 
 **Youtube Video: https://youtu.be/-AMdZjGXMCo**
+**Use Vagrant 1.8.6 or up
 
 ##Instruction:
 1. **Clone the git**
