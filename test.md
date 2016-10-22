@@ -122,7 +122,7 @@ your promt should change to:
 
 `root@nginx:/#`
 
-Now we are at the contaner propmt. 
+Now we are at the contianer propmt issue the following command:
 
 `ip a`
 
@@ -180,8 +180,9 @@ server {
     }
 }
 ```
-let's curl the `nodeapp`
+let's curl the nodejs application running on port 3000 on `nodeapp` container.
 
 `curl http://nodeapp:3000`
 
 `<!DOCTYPE html><html><head><title>Express</title><link rel="stylesheet" href="/stylesheets/style.css"></head><body><h1>Express</h1><p>Welcome to Express</p></body></html>`
+
