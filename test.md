@@ -106,10 +106,10 @@ log in to `node1` from `mgmt`
    sudo su
    docker ps
 ```
-```
+
 CONTAINER ID        IMAGE                                          COMMAND                  CREATED             STATUS              PORTS                           NAMES
-**fa942f9ca616**        10.0.15.11:5000/application/app/nginx:1.10.0   "/w/w nginx -g 'daemo"   29 minutes ago      Up 29 minutes       443/tcp, 0.0.0.0:9080->80/tcp   mesos-f5127b14-55b2-491b-af9f-004e2d644890-S2.8b044821-4fff-49be-934c-cc5331d3b7a5
+fa942f9ca616       10.0.15.11:5000/application/app/nginx:1.10.0   "/w/w nginx -g 'daemo"   29 minutes ago      Up 29 minutes       443/tcp, 0.0.0.0:9080->80/tcp   mesos-f5127b14-55b2-491b-af9f-004e2d644890-S2.8b044821-4fff-49be-934c-cc5331d3b7a5
 e8e2bd1f14bf        registry:2                                     "/entrypoint.sh /etc/"   About an hour ago   Up About an hour                                    mesos-f5127b14-55b2-491b-af9f-004e2d644890-S2.20cdaa1c-f0e7-470a-a9d9-69b2da047900
 0281332620aa        weaveworks/weaveexec:1.7.2                     "/home/weave/weavepro"   About an hour ago   Up About an hour                                    weaveproxy
 a259f83ddd41        weaveworks/weave:1.7.2                         "/home/weave/weaver -"   About an hour ago   Up About an hour                                    weave
-```
+
