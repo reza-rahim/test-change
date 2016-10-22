@@ -40,7 +40,7 @@
  
    `./mesos_deploy_scaleup_app.sh`
    
-   **you can go down to Debuging section and play with containers**
+   **At this point, you can move to `Overview of the Framework`. After understanding the system, you can comeback and perform the next two steps**
 
 8. **Move the Mongo DB from 10.0.15.12 to 10.0.15.13, the data movement is done by flocker with ZFS file system.**
 
