@@ -84,6 +84,8 @@ There are four vagrant machines
 
 ![Image of Process Deployment] (https://github.com/reza-rahim/microservice/blob/master/picture/ProcessDeployment.png)
 
+1. Build Docker images and publish to local Docker Registry: 
+2. Deploy Marathon Jobs
 
 ![Image of Aplication Architecture] (https://github.com/reza-rahim/microservice/blob/master/picture/AplicationArchitecture.png)
 
