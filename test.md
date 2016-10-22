@@ -9,7 +9,7 @@ git clone https://github.com/reza-rahim/microservice
 
 2. **Change the dir**
 
-cd microservice
+-- cd microservice
 
 3. **Bring Vagrant machines up**
 
