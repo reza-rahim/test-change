@@ -29,7 +29,7 @@
 6. **Deploy the nginx, Node.js and Mongo Db Application**
 
    ```
-   source /etc/bash.bashrc <br>
+   source /etc/bash.bashrc
 
    ./mesos_deploy_app.sh
     ```
