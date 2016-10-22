@@ -118,7 +118,7 @@ a259f83ddd41        weaveworks/weave:1.7.2                         "/home/weave/
 
 `docker exec -it fa942f9ca616 bash`
 
-Now we are at the contaner propmt. 
+   Now we are at the contaner propmt. 
 
 `ip a`
 
@@ -130,7 +130,8 @@ Now we are at the contaner propmt.
     inet6 fe80::e8f7:30ff:fe4c:a293/64 scope link
        valid_lft forever preferred_lft forever
 ```
-**10.2.0.1** is ip for nginx container assained by weave net.
+**10.2.0.1** is ip for nginx container assigned by weave net.
+
 
 Now ping the nodeapp container.
 
@@ -151,3 +152,6 @@ PING nodeapp.weave.local (10.2.128.1) 56(84) bytes of data.
 64 bytes from nodeapp.weave.local (10.2.128.1): icmp_seq=2 ttl=64 time=0.543 ms
 
 ```
+
+Ping is returning two different ip `(10.2.192.0, 10.2.128.1)`. Because there are two instances of  nodeapp container and weave DNS is load balancing between them.  
+
