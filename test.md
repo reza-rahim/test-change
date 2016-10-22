@@ -29,7 +29,7 @@ There are four vagrant machines
 1. **10.0.15.12(node2)** Serves only as a Mesos slaves. It runs application containers.   
 1. **10.0.15.13(node3)** Serves only as a Mesos slaves. It runs application containers.  
 
-![Image of Aplication Architecture] https://github.com/reza-rahim/microservice/blob/master/picture/AplicationArchitecture.png
+![Image of Aplication Architecture] (https://github.com/reza-rahim/microservice/blob/master/picture/AplicationArchitecture.png)
 
 Weave provides a virtual network for Docker Container as well DNS for container. For example, nodeapp container can be accessed from nginx container by using nodeapp.weave.local DNS name. 
 
