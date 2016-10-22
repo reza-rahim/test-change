@@ -128,3 +128,23 @@ ip a
        valid_lft forever preferred_lft forever
 ```
 **10.2.0.1** is ip for nginx container assained by weave net.
+
+Now ping the nodeapp container.
+
+`for i in `seq 1 3`; do ping -c 2 nodeapp; done`
+```
+--- nodeapp.weave.local ping statistics ---
+2 packets transmitted, 2 received, 0% packet loss, time 999ms
+rtt min/avg/max/mdev = 0.472/0.489/0.506/0.017 ms
+PING nodeapp.weave.local (10.2.192.0) 56(84) bytes of data.
+64 bytes from nodeapp.weave.local (10.2.192.0): icmp_seq=1 ttl=64 time=0.384 ms
+64 bytes from nodeapp.weave.local (10.2.192.0): icmp_seq=2 ttl=64 time=0.536 ms
+
+--- nodeapp.weave.local ping statistics ---
+2 packets transmitted, 2 received, 0% packet loss, time 999ms
+rtt min/avg/max/mdev = 0.384/0.460/0.536/0.076 ms
+PING nodeapp.weave.local (10.2.128.1) 56(84) bytes of data.
+64 bytes from nodeapp.weave.local (10.2.128.1): icmp_seq=1 ttl=64 time=0.472 ms
+64 bytes from nodeapp.weave.local (10.2.128.1): icmp_seq=2 ttl=64 time=0.543 ms
+
+```
