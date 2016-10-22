@@ -87,5 +87,6 @@ Weave provides a virtual network for Docker Container as well DNS for container.
 Flocker is configured to use ZFS file system. In a cloud environment, the system should be using network persistence volume such as EBS or Ceph. When we move the mongo db Docker container form node2 to node3, `Flocker would move all the data from node2 using ZFS replication feature`.   
 
 ### Logging
+All Docker containers are configured to use [rsyslog driver](https://docs.docker.com/engine/admin/logging/overview/). Each container goes goes to `/var/log/docker/<app_name>/docker.log`.
 
 ### Debuging 
