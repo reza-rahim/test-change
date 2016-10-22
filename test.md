@@ -127,4 +127,4 @@ ip a
     inet6 fe80::e8f7:30ff:fe4c:a293/64 scope link
        valid_lft forever preferred_lft forever
 ```
-
+**10.2.0.1** is ip for nginx container assained by weave net.
