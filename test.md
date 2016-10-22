@@ -113,3 +113,5 @@ e8e2bd1f14bf        registry:2                                     "/entrypoint.
 0281332620aa        weaveworks/weaveexec:1.7.2                     "/home/weave/weavepro"   About an hour ago   Up About an hour                                    weaveproxy
 a259f83ddd41        weaveworks/weave:1.7.2                         "/home/weave/weaver -"   About an hour ago   Up About an hour                                    weave
 ```
+
+fa942f9ca616 is docker process id for nginx container.
