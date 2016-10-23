@@ -57,7 +57,7 @@
 ## Overview of the Framework
 
 
-`**Idempotence** (/ˌaɪdᵻmˈpoʊtəns/ eye-dəm-poh-təns)[1] is the property of certain operations in mathematics and computer science, that can be applied multiple times without changing the result beyond the initial application. -- Wikipedia` 
+**Idempotence** (/ˌaɪdᵻmˈpoʊtəns/ eye-dəm-poh-təns)[1] `is the property of certain operations in mathematics and computer science, that can be applied multiple times without changing the result beyond the initial application. -- Wikipedia` 
 
 `All the build and deployment scripts for this framework are Idempotent. Means that a script only change the system to get to the desired state. If the desired state is present, the script won't changed the system. As a result, we can run any script anytime without casuing any unwanted side-effect.`
 
