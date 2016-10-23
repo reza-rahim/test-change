@@ -60,7 +60,7 @@
 
 `Idempotence (/ˌaɪdᵻmˈpoʊtəns/ eye-dəm-poh-təns)[1] is the property of certain operations in mathematics and computer science, that can be applied multiple times without changing the result beyond the initial application.` 
 
-All the build and deployment scripts for this framework is Idempotent. Means that it's only change the system to get to the desired state. If the desired state is present, the would be changed after running any script.
+`All the build and deployment scripts for this framework is Idempotent. Means that a script only change the system to get to the desired state. If the desired state is present, the script won't changed the system. As a result, we can run any script anytime without casuing unwanted side-effect.`
 
 
 1. [**Docker:**](https://www.docker.com/) Docker is a tool that allows developers, sys-admins etc. to easily deploy their applications in a sandbox (called containers) to run on the host operating system i.e. Linux.
