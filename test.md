@@ -118,7 +118,9 @@ For prodcution system, log could be aggregated using [ELK Stack](https://www.ela
 **mesos-master, mesos-slave and marathon** runs a systemd service. `journalctl` can be used view thier log files. 
 
 `journalctl -u mesos-master`
+
 `journalctl -u mesos-slave`
+
 `journalctl -u marathon`
 
 
