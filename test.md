@@ -113,6 +113,13 @@ Each local rsyslog is set up to forward the local Docker log to central rsyslog 
 
 For prodcution system, log could be aggregated using [ELK Stack](https://www.elastic.co/) 
 
+Mesos and Marathon related error could be found on the Mesos UI.
+
+Both mesos-master and mesos-slave runs a systemd service. `journalctl` can be used view thier log files. 
+
+`journalctl -u mesos-master`
+`journalctl -u mesos-slave`
+
 
 ### Debuging 
 
